@@ -10,9 +10,9 @@ To implement your own plugin, follow these 4 steps:
 ## The class extends _Plugin_ (see "MyPhoneGapPlugin.java":https://github.com/TravelingTechGuy/My-Phone-Number-Plugin/blob/master/src/com/travelingtechguy/myphonenumberplugin/MyPhoneNumberPlugin.java) 
 ## The function you need to implement is _public PluginResult execute(String action, JSONArray data, String callbackId)_
 # *Add to plugins file* - add a line that includes the full path of your class to the plugins file (see  "plugins.xml":https://github.com/TravelingTechGuy/My-Phone-Number-Plugin/blob/master/res/xml/plugins.xml)
-# *Create a JavaScript interface* - implement a JavaScript file for the interface to the plugin
-## Notice that it expects an _oSuccess_ and _onError_ callback functions (see "myphonenumber.js":https://github.com/TravelingTechGuy/My-Phone-Number-Plugin/blob/master/assets/www/myphonenumber.js)
-## No need for it to be too elaborate - contain your actual logic in the Java code
+# *Create a JavaScript interface* - implement a JavaScript interface to the plugin (see "myphonenumber.js":https://github.com/TravelingTechGuy/My-Phone-Number-Plugin/blob/master/assets/www/myphonenumber.js)
+## Notice that it expects an _oSuccess_ and _onError_ callback functions
+## No need for it to be too elaborate - contain your actual logic in the Java code, and any data preparation to the calling function
 # *Call your plugin*
 ## include the js file in the HTML head section
 ## I find it easier to create a single function that contains both _oSuccess_ and _onError_ callback functions, and the actual call (see "index.html":https://github.com/TravelingTechGuy/My-Phone-Number-Plugin/blob/master/assets/www/index.html)
