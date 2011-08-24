@@ -1,4 +1,4 @@
-h3. Simple PhoneGap plugin for Android
+h3. Android PhoneGap plugin to retrieve own phone number
 
 This project demonstrates how to build and use a simple PhoneGap plugin for Android.
 The plugin simply returns the phone's number as a string.
