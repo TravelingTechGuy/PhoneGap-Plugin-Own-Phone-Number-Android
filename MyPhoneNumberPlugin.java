@@ -45,7 +45,6 @@ public class MyPhoneNumberPlugin extends Plugin {
 		JSONObject result = new JSONObject();
 		TelephonyManager tm = (TelephonyManager) ctx.getSystemService(Context.TELEPHONY_SERVICE);
         String number = tm.getLine1Number();
-        number = "";
         if(number.equals("") || number == null) {
         	Log.d("MyPhoneNumberPlugin", "We're on a non-phone device. Returning a hash of the UDID");
         	number = md5(tm.getDeviceId()).substring(0, 10);
