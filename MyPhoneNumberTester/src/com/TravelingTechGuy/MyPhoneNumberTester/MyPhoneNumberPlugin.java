@@ -1,4 +1,7 @@
-package com.TravelingTechGuy.ImAlive;
+/**
+ * 
+ */
+package com.TravelingTechGuy.MyPhoneNumberTester;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
